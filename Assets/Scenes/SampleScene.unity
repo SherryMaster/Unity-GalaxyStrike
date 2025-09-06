@@ -1288,6 +1288,8 @@ MonoBehaviour:
   - {fileID: 178302500}
   - {fileID: 963707282}
   crosshair: {fileID: 1404038626}
+  targetPoint: {fileID: 1885436117}
+  targetDistance: 250
 --- !u!1 &1885436116
 GameObject:
   m_ObjectHideFlags: 0
