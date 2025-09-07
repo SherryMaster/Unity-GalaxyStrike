@@ -124,11 +124,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2101067483223690573, guid: 6cabcb3605d52564fb3e6044053fd081, type: 3}
   m_PrefabInstance: {fileID: 3934450927685185622}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &178302500 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6652883220729673346, guid: 6cabcb3605d52564fb3e6044053fd081, type: 3}
-  m_PrefabInstance: {fileID: 3934450927685185622}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &298381683
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,9 +962,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2101067483223690573, guid: 6cabcb3605d52564fb3e6044053fd081, type: 3}
   m_PrefabInstance: {fileID: 1575435074}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &963707282 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6652883220729673346, guid: 6cabcb3605d52564fb3e6044053fd081, type: 3}
+--- !u!1 &1037662926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3355473109684254890, guid: 6cabcb3605d52564fb3e6044053fd081, type: 3}
   m_PrefabInstance: {fileID: 1575435074}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1137520259
@@ -1125,6 +1120,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404038625}
   m_CullTransparentMesh: 1
+--- !u!1 &1537938996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3355473109684254890, guid: 6cabcb3605d52564fb3e6044053fd081, type: 3}
+  m_PrefabInstance: {fileID: 3934450927685185622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1575435074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1285,8 +1285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LaserGuns:
-  - {fileID: 178302500}
-  - {fileID: 963707282}
+  - {fileID: 1537938996}
+  - {fileID: 1037662926}
   crosshair: {fileID: 1404038626}
   targetPoint: {fileID: 1885436117}
   targetDistance: 250

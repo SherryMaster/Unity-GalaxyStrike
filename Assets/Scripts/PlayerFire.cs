@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerFire : MonoBehaviour
 {
-    [SerializeField] ParticleSystem[] LaserGuns;
+    [SerializeField] GameObject[] LaserGuns;
     [SerializeField] RectTransform crosshair;
     [SerializeField] Transform targetPoint;
     [SerializeField] float targetDistance = 250f;
@@ -20,6 +20,7 @@ public class PlayerFire : MonoBehaviour
         ProcessFiring();
         MoveCrosshair();
         MoveTargetPoint();
+        AimLasers();
     }
 
     public void OnFire(InputValue value)
@@ -31,7 +32,7 @@ public class PlayerFire : MonoBehaviour
     {
         foreach (var laserGun in LaserGuns)
         {
-            var emission = laserGun.emission;
+            var emission = laserGun.GetComponent<ParticleSystem>().emission;
             emission.enabled = isFiring;
         }
     }
@@ -46,6 +47,15 @@ public class PlayerFire : MonoBehaviour
     {
         Vector3 targetPointPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, targetDistance);
         targetPoint.position = Camera.main.ScreenToWorldPoint(targetPointPosition);
+    }
+
+    void AimLasers(){
+        foreach(GameObject laserGun in LaserGuns)
+        {
+            Vector3 direction = targetPoint.position - laserGun.transform.position;
+            Quaternion rotationToTarget = Quaternion.LookRotation(direction);
+            laserGun.transform.rotation = rotationToTarget;
+        }
     }
 
 }
