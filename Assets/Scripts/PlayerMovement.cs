@@ -62,6 +62,5 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(InputValue value)
     {
         movement = value.Get<Vector2>();
-        Debug.Log("Movement Input: " + movement);
     }
 }

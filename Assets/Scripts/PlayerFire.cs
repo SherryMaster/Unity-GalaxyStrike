@@ -52,7 +52,7 @@ public class PlayerFire : MonoBehaviour
     void AimLasers(){
         foreach(GameObject laserGun in LaserGuns)
         {
-            Vector3 direction = targetPoint.position - laserGun.transform.position;
+            Vector3 direction = targetPoint.position - this.transform.position;
             Quaternion rotationToTarget = Quaternion.LookRotation(direction);
             laserGun.transform.rotation = rotationToTarget;
         }
