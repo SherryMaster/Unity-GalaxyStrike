@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] GameObject explosionVFX;
+    
     void OnParticleCollision(GameObject other)
     {
+        Instantiate(explosionVFX, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }
 }
