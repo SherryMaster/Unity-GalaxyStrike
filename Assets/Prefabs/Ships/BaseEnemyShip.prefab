@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1155000867778171390}
   - component: {fileID: 1780863955253907164}
   - component: {fileID: 6737935942267060005}
+  - component: {fileID: 3117008974136033568}
   m_Layer: 0
   m_Name: BaseEnemyShip
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3136915197308080089}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.02254477, y: -0.86935294, z: 0.03928384, w: -0.49211186}
-  m_LocalPosition: {x: -25.74303, y: 71.89487, z: 212.8788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -77,6 +78,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 10, z: 20}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3117008974136033568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3136915197308080089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae562afd86a4de749b9c7548719e4e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionVFX: {fileID: 2018530122240208840, guid: db04b5b73a5fc6649b19f8d6035c04fa, type: 3}
 --- !u!1 &8074583029536749378
 GameObject:
   m_ObjectHideFlags: 0
