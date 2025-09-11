@@ -6,6 +6,6 @@ public class CollisionHandler : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Instantiate(explosionEffect, transform.position, transform.rotation);
-        Destroy(transform.parent.gameObject);
+        Destroy(this.gameObject);
     }
 }
